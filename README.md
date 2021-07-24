@@ -19,3 +19,9 @@ O Redux Toolkit (RTK) está disponível como um pacote no NPM para uso com um em
 > npm install @reduxjs/toolkit
 > yarn add @reduxjs/toolkit
 
+### Criando um aplicativo React Redux
+
+A maneira recomendada de iniciar novos aplicativos com React e Redux é usando os modelos oficiais de Redux + JS e Redux + TS para create-react-app, que aproveita do Redux toolkit.
+
+    npx create-react-app my-app --template redux
+    npx create-react-app my-app --template redux-typescript
