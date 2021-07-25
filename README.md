@@ -25,3 +25,18 @@ A maneira recomendada de iniciar novos aplicativos com React e Redux é usando o
 
     npx create-react-app my-app --template redux
     npx create-react-app my-app --template redux-typescript
+
+## Configurando store
+
+A função configureStore faz todo o trabalho duro para nós. Ele cria a store (estado global), combina nossos redutores e tem um bom middleware integrado.
+
+## Conectando store ao aplicativo
+
+Para importar e compartilhar o estado global para toda a aplicação, é necessário importar uma função da lib react-redux chamada Provider, essa função recebe como propriedade o nome da store global.
+
+    import store from "./store/store.js;
+    import {Provider} from "react-redux";
+    <Provider store={store}>
+        <App/>
+    </Provider>
+
